@@ -10,18 +10,35 @@
         <Button x:Name="Reb1" Content="Reboot" HorizontalAlignment="Left" Margin="133,72,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click"/>
         <Button x:Name="VPN" Content="VPN" HorizontalAlignment="Left" Margin="241,72,0,0" VerticalAlignment="Top" Width="75" Click="VPN_Click"/>
         <Button x:Name="Update1" Content="Update" HorizontalAlignment="Left" Margin="348,72,0,0" VerticalAlignment="Top" Width="75" Click="Update1_Click"/>
-        <Label x:Name="label" Content="BASS" HorizontalAlignment="Left" Margin="68,69,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy" Content="SMC1" HorizontalAlignment="Left" Margin="64,97,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy1" Content="SMC2" HorizontalAlignment="Left" Margin="64,131,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy2" Content="SMC3" HorizontalAlignment="Left" Margin="64,165,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="BASS" HorizontalAlignment="Left" Margin="68,69,0,0" VerticalAlignment="Top" Width="457" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" Panel.ZIndex="-1"/>
+        <Label x:Name="label_Copy" Content="SMC1" HorizontalAlignment="Left" Margin="68,100,0,0" VerticalAlignment="Top" Width="457" Panel.ZIndex="-1" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Label x:Name="label_Copy1" Content="SMC2" HorizontalAlignment="Left" Margin="68,131,0,0" VerticalAlignment="Top" Panel.ZIndex="-1" Width="457" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Label x:Name="label_Copy2" Content="SMC3" HorizontalAlignment="Left" Margin="68,165,0,0" VerticalAlignment="Top" Panel.ZIndex="-1" Width="457" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
         <Button x:Name="Reb2" Content="Reboot" HorizontalAlignment="Left" Margin="133,103,0,0" VerticalAlignment="Top" Width="75" Click="Reb2_Click"/>
         <Button x:Name="Reb3" Content="Reboot" HorizontalAlignment="Left" Margin="133,134,0,0" VerticalAlignment="Top" Width="75" Click="Reb3_Click"/>
         <Button x:Name="Reb4" Content="Reboot" HorizontalAlignment="Left" Margin="133,165,0,0" VerticalAlignment="Top" Width="75" Click="Reb4_Click"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="133,240,0,0" VerticalAlignment="Top" Width="121" Height="26"/>
-        <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="68,240,0,0" VerticalAlignment="Top"/>
-        <ScrollViewer HorizontalAlignment="Left" Height="203" Margin="275,206,0,0" VerticalAlignment="Top" Width="507" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}">
-            <TextBlock x:Name="LogBlock" TextWrapping="Wrap" Text="Opened"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="133,206,0,0" VerticalAlignment="Top" Width="121" Height="26"/>
+        <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="68,206,0,0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Width="186" Panel.ZIndex="-1"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="187" Margin="275,206,0,0" VerticalAlignment="Top" Width="490" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}">
+            <TextBlock x:Name="LogBlock" TextWrapping="Wrap"><Run Text="Opened"/><LineBreak/><Run/></TextBlock>
         </ScrollViewer>
+        <Button x:Name="Update2" Content="Update" HorizontalAlignment="Left" Margin="348,103,0,0" VerticalAlignment="Top" Width="75" Click="Update2_Click"/>
+        <Button x:Name="Update3" Content="Update" HorizontalAlignment="Left" Margin="348,134,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Update4" Content="Update" HorizontalAlignment="Left" Margin="348,165,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="UpdateLibrary" Content="Update&#xD;&#xA;Media&#xD;&#xA;Library" HorizontalAlignment="Left" Margin="440,104,0,0" VerticalAlignment="Top" Width="75" Height="82" Click="UpdateLibrary_Click"/>
+        <Label x:Name="label2" Content="Conected Display" HorizontalAlignment="Left" Margin="539,51,0,0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Width="134" Height="140" HorizontalContentAlignment="Center"/>
+        <Button x:Name="On1" Content="On" HorizontalAlignment="Left" Margin="549,103,0,0" VerticalAlignment="Top" Width="50" Click="On1_Click"/>
+        <Button x:Name="On2" Content="On" HorizontalAlignment="Left" Margin="549,134,0,0" VerticalAlignment="Top" Width="50" Click="On2_Click"/>
+        <Button x:Name="On3" Content="On" HorizontalAlignment="Left" Margin="549,165,0,0" VerticalAlignment="Top" Width="50" Click="On3_Click"/>
+        <Button x:Name="Off3" Content="Off" HorizontalAlignment="Left" Margin="613,165,0,0" VerticalAlignment="Top" Width="50" Click="Off3_Click"/>
+        <Button x:Name="Off2" Content="Off" HorizontalAlignment="Left" Margin="613,134,0,0" VerticalAlignment="Top" Width="50" Click="Off2_Click"/>
+        <Button x:Name="Off1" Content="Off" HorizontalAlignment="Left" Margin="613,103,0,0" VerticalAlignment="Top" Width="50" Click="Off1_Click"/>
+        <TextBox x:Name="Message" HorizontalAlignment="Left" Height="26" Margin="133,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
+        <Label x:Name="label1_Copy" Content="Content" HorizontalAlignment="Left" Margin="68,237,0,0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Width="186" Panel.ZIndex="-1"/>
+        <Label x:Name="label2_Copy" Content="Notification" HorizontalAlignment="Left" Margin="678,51,0,0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Width="87" Height="140" HorizontalContentAlignment="Center"/>
+        <Button x:Name="Send1" Content="Send" HorizontalAlignment="Left" Margin="687,104,0,0" VerticalAlignment="Top" Width="68" Click="Send1_Click"/>
+        <Button x:Name="Send2" Content="Send" HorizontalAlignment="Left" Margin="687,134,0,0" VerticalAlignment="Top" Width="68" Click="Send2_Click"/>
+        <Button x:Name="Send3" Content="Send" HorizontalAlignment="Left" Margin="687,165,0,0" VerticalAlignment="Top" Width="68" Click="Send3_Click"/>
 
     </Grid>
 </Window>
